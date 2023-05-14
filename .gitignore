@@ -398,3 +398,5 @@ FodyWeavers.xsd
 *.sln.iml
 
 lesson17__sass/our-team.html
+
+.vscode

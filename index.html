@@ -18,26 +18,30 @@
                 <a class="header__logo" href="#">
                     <img class="logo-img" src="assets/images/logo/Logo.svg">
                 </a>
-                <nav class="nav">
+                <nav class="nav" id="myDIV">
                     <ul class="nav__list">
-                        <li>
+                        <li class="nav__list-item">
+                            <a class="nav__bullet active" href="#"></a>
                             <a class="nav__link" href="#">
                                 About Us
                             </a>
                         </li>
-                        <li>
-                            <a class="nav__link" href="#">
+                        <li class="nav__list-item">
+                            <a class="nav__bullet" href="#projects"></a>
+                            <a class="nav__link" href="#projects">
                                 Projects
                             </a>
                         </li>
-                        <li>
-                            <a class="nav__link" href="#">
+                        <li class="nav__list-item">
+                            <a class="nav__bullet" href="#news"></a>
+                            <a class="nav__link" href="#news">
                                 News
                             </a>
                         </li>
-                        <li>
-                            <a class="nav__link" href="#">
-                                Contact
+                        <li class="nav__list-item">
+                            <a class="nav__bullet" href="#contacts"></a>
+                            <a class="nav__link" href="#contacts">
+                                Contacts
                             </a>
                         </li>
                     </ul>
@@ -61,7 +65,7 @@
                 </div>
             </div>
         </header>
-        <div class="hero__body">
+        <div class="hero__body" id="about us">
             <div class="hero__title">
                 <h1>
                     SIMPLE & MODERN
@@ -70,91 +74,110 @@
                     WE MAKE THE WORLD BEAUTIFUL EVERYDAY
                 </h2>
             </div>
+            <a href="#projects" class="scroll-down"></a>
         </div>
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <img class="hero-picture" src="assets/images/pictures/jpg/1x/hero-picture.jpg">
             </div>
             <div class="swiper-slide">
-                <img class="hero-picture" src="assets/images/pictures/jpg/1x/hero-picture.jpg">
+                <img class="hero-picture" src="assets/images/pictures/jpg/1x/pexels-emrecan-algül-15238518 (2).jpg">
 
             </div>
             <div class="swiper-slide">
-                <img class="hero-picture" src="assets/images/pictures/jpg/1x/hero-picture.jpg">
+                <img class="hero-picture" src="assets/images/pictures/jpg/1x/pexels-diego-f-parra-15177899 (1).jpg">
 
             </div>
             <div class="swiper-slide">
-                <img class="hero-picture" src="assets/images/pictures/jpg/1x/hero-picture.jpg">
+                <img class="hero-picture" src="assets/images/pictures/jpg/1x/pexels-pixabay-258160 (1).jpg">
 
             </div>
             <div class="swiper-slide">
-                <img class="hero-picture" src="assets/images/pictures/jpg/1x/hero-picture.jpg">
-
+                <img class="hero-picture" src="assets/images/pictures/jpg/1x/pexels-pixabay-269077 (1).jpg">
             </div>
         </div>
         <div class="swiper-pagination"></div>
     </div>
-    <section class="projects">
-        <div class="picture-bg"></div>
-        <div class="projects__content">
-            <div class="title-section">
-                <hr class="title-section__line">
-                <h2 class="heading-section">
-                    WHAT WE DO
+    <section class="projects" id="projects">
+        <!-- <div class="projects__content"> -->
+        <div class="title-section">
+            <hr class="title-section__line">
+            <h2 class="heading-section">
+                WHAT WE DO
+            </h2>
+        </div>
+        <div class="projects__wrap">
+            <div class="picture-bg-first"></div>
+            <div class="projects__img">
+                <img class="projects-picture" src="/assets/images/pictures/jpg/1x/joel-filipe-151697 1.jpg">
+            </div>
+            <div class="projects__cta">
+                <h3 class="projects__subtitle">
+                    ONE WORLD
+                </h3>
+                <h2 class="heading-section heading-section--projects">
+                    TRADE CENTER
                 </h2>
-            </div>
-            <div class="projects__wrap">
-                <div class="projects__img">
-                    <img class="projects-picture" src="/assets/images/pictures/jpg/1x/joel-filipe-151697 1.jpg">
+                <p class="description-section">
+                    Increasing prosperity in our lives can be accomplished by having the right frame of mind. The
+                    truth is, our thoughts are very powerful.
+                </p>
+                <div class="button-section">
+                    <a class="button-section__link" href="#">
+                        More details
+                    </a>
                 </div>
-                <div class="projects__cta">
-                    <h3 class="projects__subtitle">
-                        ONE WORLD
-                    </h3>
-                    <h2 class="heading-section heading-section--projects">
-                        TRADE CENTER
-                    </h2>
-                    <p class="description-section">
-                        Increasing prosperity in our lives can be accomplished by having the right frame of mind. The
-                        truth is, our thoughts are very powerful.
-                    </p>
-                    <div class="button-section">
-                        <a class="button-section__link" href="#">
-                            More details
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="picture-bg picture-bg--project-second"></div>
-            <div class="projects__wrap projects__wrap--project-second">
-                <div class="projects__img">
-                    <img class="projects-picture" src="/assets/images/pictures/jpg/1x/joel-filipe-151697 1.jpg">
-                </div>
-                <div class="projects__cta">
-                    <h3 class="projects__subtitle">
-                        ONE WORLD
-                    </h3>
-                    <h2 class="heading-section heading-section--projects">
-                        TRADE CENTER
-                    </h2>
-                    <p class="description-section">
-                        Increasing prosperity in our lives can be accomplished by having the right frame of mind. The
-                        truth
-                        is,
-                        our thoughts are very powerful.
-                    </p>
-                    <div class="button-section">
-                        <a class="button-section__link" href="#">
-                            More details
-                        </a>
-                    </div>
+                <div class="projects__location">
+                    <a href="https://goo.gl/maps/xnBxYf1bGzzyjr8WA">
+                        <svg class="icon-geo">
+                            <use xlink:href="assets/sprite.svg#geo"></use>
+                        </svg>
+                    </a>
+                    <a class="location-link" href="https://goo.gl/maps/xnBxYf1bGzzyjr8WA">
+                        New York City, United States - 1776 feet
+                    </a>
                 </div>
             </div>
         </div>
+
+        <div class="projects__wrap projects__wrap--project-second">
+            <div class="picture-bg-second"></div>
+            <div class="projects__img">
+                <img class="projects-picture" src="/assets/images/pictures/jpg/1x/photos-1284iH4Hjf4mhNgW 1.jpg">
+            </div>
+            <div class="projects__cta">
+                <h3 class="projects__subtitle">
+                    INTERNATIONAL
+                </h3>
+                <h2 class="heading-section heading-section--projects">
+                    COMMERCE CENTRE
+                </h2>
+                <p class="description-section">
+                    Successful businesses have many things in common, today we&#180;ll look at the big &#180;R&#180; of
+                    recognition
+                    and how a digital advertising<br> network may help.
+                </p>
+                <div class="button-section">
+                    <a class="button-section__link" href="#">
+                        More details
+                    </a>
+                </div>
+                <div class="projects__location">
+                    <a href="https://goo.gl/maps/HcCMRKsZshHynv428">
+                        <svg class="icon-geo">
+                            <use xlink:href="assets/sprite.svg#geo"></use>
+                        </svg>
+                    </a>
+                    <a class="location-link" href="https://goo.gl/maps/HcCMRKsZshHynv428">
+                        Hong Kong - 1588 feet
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
     </section>
 
-    <div class="swiper-slide swiper-slide--horizontal">
+    <div class="swiper-slide swiper-slide--horizontal section" id="news">
         <div class="swiper mySwiper2 wrap">
             <div class="title-section">
                 <hr class="title-section__line title-section__line--blog">
@@ -172,8 +195,7 @@
                         <p class="blog__subtitle short">
                             Free directories: directories are perfect for customers that are searching for
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus placeat deserunt
-                            aperiam tenetur consequuntur vitae facere quae iusto labore facilis. Architecto quia
-                            temporibus necessitatibus ad deleniti delectus minima aliquid.
+                            aperiam tenetur consequuntur vitae facere.
                         </p>
                         <img class="picture-author"
                             src="assets/images/pictures/jpg/1x/photos-13323TAfapiSrc9IO23 1.jpg">
@@ -197,8 +219,7 @@
                         <p class="blog__subtitle short">
                             Having a home based business is a wonderful asset to your life Lorem ipsum dolor
                             sit, amet consectetur adipisicing elit. Accusamus placeat deserunt aperiam
-                            tenetur consequuntur vitae facere quae iusto labore facilis. Architecto quia
-                            temporibus necessitatibus ad deleniti delectus minima aliquid vitae.
+                            tenetur consequuntur vitae facere.
                         </p>
                         <img class="picture-author" src="assets/images/pictures/jpg/1x/photos-13323vsWmKApDZJIh 1.jpg">
                         <div class="info-post">
@@ -220,8 +241,7 @@
                         <p class="blog__subtitle short">
                             There are many things that are important to catalog design Lorem ipsum dolor sit,
                             amet consectetur adipisicing elit. Accusamus placeat deserunt aperiam
-                            tenetur consequuntur vitae facere quae iusto labore facilis. Architecto quia
-                            temporibus necessitatibus ad deleniti delectus minima aliquid vitae.
+                            tenetur consequuntur vitae facere.
                         </p>
                         <img class="picture-author" src="assets/images/pictures/jpg/1x/photos-13323TAfapiSrc9IO 1.jpg">
                         <div class="info-post">
@@ -243,8 +263,7 @@
                         <p class="blog__subtitle short">
                             There are many things that are important to catalog design Lorem ipsum dolor sit,
                             amet consectetur adipisicing elit. Accusamus placeat deserunt aperiam
-                            tenetur consequuntur vitae facere quae iusto labore facilis. Architecto quia
-                            temporibus necessitatibus ad deleniti delectus minima aliquid vitae.
+                            tenetur consequuntur vitae facere.
                         </p>
                         <img class="picture-author" src="assets/images/pictures/jpg/1x/photos-13323TAfapiSrc9IO 1.jpg">
                         <div class="info-post">
@@ -266,11 +285,7 @@
                         <p class="blog__subtitle short">
                             Free directories: directories are perfect for customers that are searching for
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus placeat deserunt
-                            aperiam
-                            tenetur consequuntur vitae facere quae iusto labore facilis. Architecto quia
-                            temporibus
-                            necessitatibus
-                            ad deleniti delectus minima aliquid.
+                            aperiam tenetur consequuntur vitae facere.
                         </p>
                         <img class="picture-author"
                             src="assets/images/pictures/jpg/1x/photos-13323TAfapiSrc9IO23 1.jpg">
@@ -293,8 +308,7 @@
                         <p class="blog__subtitle short">
                             There are many things that are important to catalog design Lorem ipsum dolor sit,
                             amet consectetur adipisicing elit. Accusamus placeat deserunt aperiam
-                            tenetur consequuntur vitae facere quae iusto labore facilis. Architecto quia
-                            temporibus necessitatibus ad deleniti delectus minima aliquid vitae.
+                            tenetur consequuntur vitae facere.
                         </p>
                         <img class="picture-author" src="assets/images/pictures/jpg/1x/photos-13323TAfapiSrc9IO 1.jpg">
                         <div class="info-post">
@@ -324,7 +338,7 @@
         </div>
     </div>
 
-    <section class="gallery">
+    <section class="gallery section">
         <div class="title-section">
             <hr class="title-section__line">
             <h2 class="heading-section">
@@ -356,8 +370,8 @@
         </div>
     </section>
 
-    <section class="contacts">
-       
+    <section class="contacts section" id="contacts">
+
         <div id="map">
             <!-- МАПА -->
         </div>
@@ -370,42 +384,44 @@
             </div>
             <div class="contacts__wrap">
                 <div class="contacts__info">
-                    <svg class="icon-form">
+                    <svg class="icon-contacts">
                         <use xlink:href="assets/sprite.svg#adress"></use>
                     </svg>
                     <p class="contacts__subtitle">
                         91 Nolan Extensions Suite 670
                     </p>
-                    <svg class="icon-form">
+                    <svg class="icon-contacts">
                         <use xlink:href="assets/sprite.svg#tel"></use>
                     </svg>
                     <p class="contacts__subtitle">
                         +001 356-868-2454
                     </p>
-                    <svg class="icon-form">
+                    <svg class="icon-contacts">
                         <use xlink:href="assets/sprite.svg#mailto"></use>
                     </svg>
                     <p class="contacts__subtitle">
                         montichello@service.com
                     </p>
-                    <svg class="icon-form">
+                    <svg class="icon-contacts">
                         <use xlink:href="assets/sprite.svg#time"></use>
                     </svg>
                     <p class="contacts__subtitle">
                         From 07:05AM to 19:30PM
                     </p>
                 </div>
-                <form class="form" method="post">
-                    <div class="form__item">
-                        <input type="text" name="First Name" placeholder="Mollie Medina" class="input"
-                            pattern="[A-Za-z]*" autocomplete="off" required>
-                    </div>
-                    <div class="form__item">
-                        <input type="email" name="E-Mail" placeholder="Email" class="input" pattern="[A-Za-z]*"
-                            autocomplete="off" required>
+                <form class="form" method="get" id="form">
+                    <!-- <div class="form__item"> -->
+                    <input type="text" name="First Name" placeholder="Mollie Medina" class="input" autocomplete="off">
+                    <!-- </div> -->
+                    <!-- <div class="form__item"> -->
+                    <input type="email" name="E-Mail" placeholder="Email" class="input" id="input" autocomplete="off"
+                        required>
+                    <!-- </div> -->
+                    <div id="error">
+                        <span class="form__item-error">Invalid value</span>
                     </div>
                     <button type="submit" class="button-section button-section--form">
-                        <a class="button-section__link" href="#">
+                        <a class="button-section__link">
                             Submit
                         </a>
                     </button>

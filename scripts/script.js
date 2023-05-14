@@ -7,12 +7,9 @@ const swiper = new Swiper(".mySwiper", {
 		clickable: true,
 	},
 	autoplay: {
-		delay: 5000,
-	},
-	/* autoplay: {
-        delay: 5000,
+        delay: 3000,
         disableOnInteraction: false
-    }, */
+    },
 	loop: true,
 });
 
@@ -27,8 +24,6 @@ const swiper2 = new Swiper(".mySwiper2", {
 		el: ".swiper-pagination",
 		clickable: true,
 	},
-	// mousewheel: true,
-	// keyboard: true,
 	loop: true,
 });
 
@@ -52,16 +47,16 @@ function init() {
 			4.4746764,
 			12
 		),
-		styles: [  // це в ідеалі закинути в json, шоб воно тут не займало місце
+		styles: [
 			{
 				featureType: "water",
 				elementType: "geometry",
-				stylers: [{ color: "#e2e2e2" }, { lightness: 17 }], // це колір поверхні мапи, я сам підлатшував, можно більш чи менш сірий
+				stylers: [{ color: "#e2e2e2" }, { lightness: 17 }],
 			},
 			{
 				featureType: "landscape",
 				elementType: "geometry",
-				stylers: [{ color: "#e7e7e7" }, { lightness: 20 }], // з водою так само
+				stylers: [{ color: "#e7e7e7" }, { lightness: 20 }], 
 			},
 			{
 				featureType: "road.highway",
@@ -143,11 +138,11 @@ function init() {
 
 	let map = new google.maps.Map(mapElement, mapOptions);
 
-	const iconBase = "icons/"; // назва папки де лежить іконка маркера, я щось туплю зі шляхами, тому в мене ця папка лежить не в assets, а в корені проекту. 
+	const iconBase = "./assets/images/icons/"; 
 
 	const icons = {
 		info: {
-			icon: iconBase + "Pin.svg", // назва іконки маркера
+			icon: iconBase + "Pin.svg",
 		},
 	};
 
@@ -170,11 +165,53 @@ function init() {
 			animation: google.maps.Animation.BOUNCE, // підскакування вверх вниз 
 		});
 	}
-
-	// let marker = new google.maps.Marker({
-	//     position: new google.maps.LatLng(51.922975,4.4639904,15),
-	//     map: map,
-	// 	icon: "assets\images\icons\Pin.png"
-
-	// });
 }
+
+var btnContainer = document.getElementById("myDIV");
+
+var btns = btnContainer.getElementsByClassName("nav__bullet");
+
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+window.addEventListener('scroll', () => {
+	let scrollDistance = window.scrollY;
+  
+	if (window.innerWidth > 768) {
+	  document.querySelectorAll('.section').forEach((el, i) => {
+		if (el.offsetTop - document.querySelector('.nav').clientHeight <= scrollDistance) {
+		  document.querySelectorAll('.nav__bullet').forEach((el) => {
+			if (el.classList.contains('active')) {
+			  el.classList.remove('active');
+			}
+		  });
+  
+		  document.querySelectorAll('.nav__list-item')[i].querySelector('a').classList.add('active');
+		}
+	  });
+	}
+  });
+
+  input.onblur = function() {
+	if (!input.value.includes('@')) {
+	  input.classList.add('invalid');
+	error.innerHTML = 'Invalid value'
+	}
+  };
+  
+  input.onfocus = function() {
+	if (this.classList.contains('invalid')) {
+	 this.classList.remove('invalid');
+	error.innerHTML = "";
+	}
+};
+
+
+
+
+
