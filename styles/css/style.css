@@ -228,6 +228,7 @@ h1 {
 }
 .heading-section--projects {
   text-align: inherit;
+  width: 112%;
 }
 .heading-section--blog {
   color: #fff;
@@ -286,12 +287,11 @@ h1 {
 }
 .projects__wrap {
   display: flex;
-  align-items: center;
   justify-content: center;
   width: 94%;
   max-width: 1170px;
   margin: 0 auto;
-  padding-bottom: 120px;
+  padding-bottom: 177px;
   gap: 112px;
 }
 .projects__wrap--project-second {
@@ -300,6 +300,7 @@ h1 {
 .projects__cta {
   display: flex;
   flex-direction: column;
+  padding-top: 64px;
   width: 426px;
   box-sizing: border-box;
 }
@@ -361,6 +362,7 @@ h1 {
   font-size: 18px;
   font-weight: 40;
   line-height: 30px;
+  width: 108%;
   color: #2c4058;
   padding: 20px 0 40px 0;
 }
@@ -675,6 +677,14 @@ h1 {
   width: 48%;
 }
 
+@media all and (min-width: 1200px) and (max-width: 1599px) {
+  .heading-section {
+    font-size: 37px;
+  }
+  .heading-section--projects {
+    width: 109%;
+  }
+}
 @media all and (min-width: 1200px) and (max-width: 1600px) {
   .blog__title {
     font-size: 17px;
